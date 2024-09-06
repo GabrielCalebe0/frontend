@@ -1,6 +1,6 @@
-function Logo(){
+function Logo(props){
     return (
-        <img src="arquivo.svg" alt="Logo da aplicação"/>
+        <img src={props.imagem} alt={props.texto}/>
     )
 }
 
