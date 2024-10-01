@@ -1,4 +1,6 @@
-import { Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
+
+import "./layout.css"
 
 function Layout(){
     return (
@@ -10,7 +12,7 @@ function Layout(){
             <nav>
                 <ul>
                     <li><NavLink to="/home">Home</NavLink></li>
-                    <li><NavLink to="/perfil">Perfil</NavLink></li>
+                    <li><NavLink to="/perfil/1">Perfil</NavLink></li>
                     <li><NavLink to="/">Sair</NavLink></li>
                 </ul>
             </nav>
