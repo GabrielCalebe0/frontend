@@ -1,12 +1,13 @@
 import Cabecalho from "../components/Cabecalho"
 import Conteudo from "../components/Conteudo"
-
+import Formulario from "./Formulario"
 function Novo(){
-    return 
-    (<>
+    return( 
+    <>
      <Cabecalho/>
      <Conteudo>
         <h2>Novo contato</h2>
+        <Formulario trataEnviar={() => {}}/>
      </Conteudo>
     </>)
     
