@@ -1,10 +1,10 @@
-import {useform} from 'react-hook-form'
+import {useForm} from 'react-hook-form'
 import InputNome from '../components/InputNome'
 import InputTelefone from '../components/InputTelefone'
 
 function Formulario(props){
-    const {register, handleSubmit, fromState: {errors},
-} = useform()
+    const {register, handleSubmit, formState: {errors},
+} = useForm()
     
     return (
         <form onSubmit={handleSubmit(props.trataEnviar)}>

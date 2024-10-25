@@ -1,6 +1,14 @@
+import Cabecalho from "../components/Cabecalho"
+import Conteudo from "../components/Conteudo"
+import Listagem from "./Listagem"
 function Listar(){
-    return 
-    <></>
+    return <>
+     <Cabecalho/>
+     <Conteudo>
+        <h2>Lista de Contato</h2>
+        <Listagem/>
+     </Conteudo>
+    </>
     
 }
 

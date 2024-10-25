@@ -1,9 +1,13 @@
 function InputTelefone(props){
+
+    const regras ={
+        required: 'Telefone é obrigatório',
+    }
     return (
     <>
      <label htmlFor="telefone">Telefone</label>
-     <input type="tel"{...props.registrar("telefone", regras)} />
-     {props.erro && <p>{props.erro.message}</p>}
+     <input type="tel"{...props.register("telefone", regras)} />
+     {props.error && <p>{props.error.message}</p>}
     </>
     )
     
